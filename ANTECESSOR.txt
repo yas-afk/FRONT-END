@@ -1,0 +1,13 @@
+Algoritmo "antecessor"
+
+
+Var
+numero, antecessor : inteiro
+inicio
+escreval("digite um numero: ")
+leia(numero)
+limpatela()
+antecessor <- numero-1
+escreval("O antecessor é:",antecessor)
+
+Fimalgoritmo
