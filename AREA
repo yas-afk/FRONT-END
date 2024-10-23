@@ -1,0 +1,17 @@
+Algoritmo "area"
+
+Var
+area, base, altura : inteiro
+
+
+Inicio
+escreval(" digite a base :")
+leia(base)
+escreval("digite a altura :")
+leia(altura)
+ area<- base*altura
+ escreval (" sua area e :",area)
+ 
+
+
+Fimalgoritmo
