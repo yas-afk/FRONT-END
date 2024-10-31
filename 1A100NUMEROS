@@ -1,0 +1,15 @@
+Algoritmo "1a100numeros"
+
+Var
+i : inteiro
+
+
+Inicio
+para i de ate 100 faca
+  se( 3 % 10 = 0 )entao
+   escreval( i,"ﾉ MULTIPO DE 10")
+   senao
+    escreval(i)
+    fimSe
+fimPara
+Fimalgoritmo
