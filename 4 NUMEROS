@@ -1,0 +1,20 @@
+Algoritmo "4numeros"
+
+Var
+ i, numero, soma : inteiro
+
+
+Inicio
+// entrada de 4 numeros
+// processamento somar os 4 numeros
+// resultado da soma
+
+para i de 1 ate 4 faca
+   escreval("digite o ",i," numero")
+   leia(numero)
+   
+   soma <- soma + numero
+fimPara
+
+escreval(" a soma dos numeros e de : ", soma)
+Fimalgoritmo
