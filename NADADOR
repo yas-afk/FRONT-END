@@ -1,0 +1,38 @@
+Algoritmo "Nadador"
+
+Var
+idade: inteiro
+
+procedimento nadador(idade : inteiro)
+inicio
+    se (idade <= 5) entao
+       Escreval("Categoria: Nao existe essa categoria")
+    senao
+       se (idade <= 8) entao
+          Escreval("Categoria: Infantil A")
+       senao
+          se (idade <= 12) entao
+             Escreval("Categoria: Infantil B")
+          senao
+             se (idade <= 14) entao
+                Escreval("Categoria: Juvenil A")
+             senao
+                se (idade <= 18) entao
+                    Escreval("Categoria: Juvenil B")
+                senao
+                    Escreval("Categoria: Adultos")
+
+       fimse
+     fimse
+   fimse
+   fimse
+   fimse
+fimprocedimento
+
+Inicio
+    Escreval ("Informe a idade do nadador:")
+    leia(idade)
+    nadador(idade)
+// Verificar a categoria com base na idade
+
+Fimalgoritmo
