@@ -1,0 +1,16 @@
+Algoritmo "numeroVR"
+
+Var
+numero : vetor[1..5] de caractere
+i: inteiro
+Inicio
+   para i de 1 ate 5 faca
+   escreval("Digite um número")
+   leia (numero[i])
+   limpatela()
+   fimPara
+   limpatela()
+   para i de 5 ate 1 passo -1 faca
+   escreval(numero[i])
+   fimPara
+Fimalgoritmo
