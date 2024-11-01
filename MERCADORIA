@@ -1,0 +1,33 @@
+Algoritmo "mercadoria"
+
+Var
+mercadoria , nome : vetor[1..3] de caractere
+valor: vetor[1..3] de real
+i : inteiro
+total, media : real
+
+Inicio
+   para i de 1 ate 3 faca
+     escreval("nome da sua mercadoria:")
+ leia (mercadoria[i])
+fimPara
+limpaTela()
+ para i de 1 ate 3 faca
+     escreval("valor da mercadoria:")
+     leia (valor[i])
+     total <- total + valor[i]
+fimPara
+limpaTela()
+   escreval("---LISTA DE MERCADORIAS---")
+
+para i de 1 ate 3 faca
+   escreval("")
+   escreval("mercadoria",[i])
+   escreval("-------")
+   escreval("")
+fimPara
+media <- total/3
+escreval("A media total da sua compra é :R$", media:2:2)
+ escreval("seu valor total e de : R$", total)
+
+Fimalgoritmo
