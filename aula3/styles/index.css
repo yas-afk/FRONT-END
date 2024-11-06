@@ -6,20 +6,20 @@ padding: 0%;
 
 body{
 
-    background-color: rgb(156, 192, 224);
+    background-color: rgb(156, 137, 209);
 }
 
 #cabecalho, #rodape {
     width: 100%;
     height: 80px;
-    background-color: rgb(122, 157, 185);
+    background-color: rgb(117, 63, 119);
     text-align: center;
-    color:rgb(84, 110, 133);
+    color:rgb(158, 98, 158);
     line-height: 80px;
 }
 #conteudo{
     width: 80%;
-background-color: rgb(48, 98, 129);
+background-color: rgb(152, 114, 187);
 border-radius: 10px;
 text-align: center;
 box-shadow: 10px 10px 10px black;
@@ -31,4 +31,8 @@ margin: 20px auto;
 }
 img{
  width: 80%
+}
+#donuts{
+    padding: 10px;
+    margin: 20px auto;
 }
