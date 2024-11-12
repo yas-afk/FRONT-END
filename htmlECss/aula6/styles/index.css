@@ -1,0 +1,55 @@
+/* animação step by step*/
+@keyframes animacao{
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: brown;
+    }
+    100%{
+        background-color: red;
+    }
+}
+@font-face {
+    font-family: HeyComic ;
+    src: url(../fonts/Hey\ Comic.ttf);
+}
+
+ 
+h1{
+    font-family: HeyComic, Arial;
+}
+*{
+ padding: 0%;
+ margin: 0%;
+ font-family: "Noto Serif", serif;
+}
+
+.caixa{
+width: 200px;
+height: 200px;
+margin: 10px;
+border-radius: 10px;
+}
+#caixa1{
+    background-color: brown;
+    transition: 1s;
+}
+
+#caixa1:hover{
+    border-radius: 100%;
+    transition: 1s;
+    animation:  1s animacao infinite; 
+}
+#caixa2{
+    background-color: blue;
+    transition: 0.5s;
+}
+#caixa2:active{
+    width: 100%;
+    transition: 0.5s;
+    background-color: darkblue;
+}
+#caixa3{
+    background-color: gold;
+}
