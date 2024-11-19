@@ -3,3 +3,8 @@
     padding: 0%;
     
 }
+#nomeDiv{
+    width: 60%;
+    background-color: cadetblue;
+    color: beige;
+}
