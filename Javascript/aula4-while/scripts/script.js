@@ -15,12 +15,24 @@ for(var i = 0;1 < 3;i++){
 
 //testes()
 
+
 function carregarCatalogo(){
-    for (let i=0;i < 4;i++){
+
+     var livros = [
+           ["images/a menina.jpg","A Menina que Roubava Livros"],
+           ["images/jardim secreto.jpg", "Jardim Secreto"],
+           ["images/juju.webp", "Jujustu Kaisen"],
+           ["images/demonslayer.jpg","Kimetsu no yaiba"],
+           ["images/a voz.jpg","A voz do silêncio"]
+     ]
+    
+    livros.forEach(cadaLivro => {
+     
+
         document.getElementById('catalogo').innerHTML += `
          <div class="livro">
-                 <img src="images/a menina.jpg" alt="">
-            <h4>A menina que roubava livros</h4>
+                 <img src="${cadaLivro[0]}" alt="">
+            <h4>${cadaLivro[1]}</h4>
        <button>
              Adicionar
                 <img src="images/plus.svg" alt="">
@@ -28,6 +40,6 @@ function carregarCatalogo(){
         </div>
 
         `
-    }
+     }); 
 }
  carregarCatalogo()

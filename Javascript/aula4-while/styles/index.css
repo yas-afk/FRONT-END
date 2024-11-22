@@ -4,9 +4,9 @@
 }
 
 :root{
-    --corPrimaria: rgb(138, 18, 18) ;
-    --corSecundaria: rgb(99, 17, 17);
-    --branco: rgb(102, 16, 16);
+    --corPrimaria: rgb(110, 5, 5) ;
+    --corSecundaria: rgb(37, 2, 2);
+    --branco: rgb(80, 9, 12);
 }
 
 header,footer{
