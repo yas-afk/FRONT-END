@@ -12,6 +12,7 @@ lista_categorias.push(new Categoria('Parasita','/atividade/images/filme1.png','O
 lista_categorias.push(new Categoria('Corra','/atividade/images/filme3.png','Chris é um jovem fotógrafo negro que está prestes a conhecer os pais de Rose, sua namorada caucasiana. Na luxuosa propriedade dos pais dela, Chris percebe que a família esconde algo muito perturbador.',' @Filmimis'))
 lista_categorias.push(new Categoria('10 coisas que eu odeio em você','/atividade/images/filme2.png','A história é centrada em Bianca, uma bonita e popular estudante que vive sob a vigilância do pai que estabelece uma regra: Bianca só pode ter um namorado quando a irmã mais velha namorar. O problema é que nenhum garoto consegue chegar perto de Kat','@Filmimis'))
 
+ 
 
 lista_categorias.forEach(categoria => {
     document.querySelector('#categoriaItems').innerHTML += `
@@ -30,4 +31,4 @@ lista_categorias.forEach(categoria => {
                     </div>
                   </div>
     `
-})
+  })
