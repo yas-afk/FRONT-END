@@ -4,9 +4,9 @@
 }
 
 :root{
-    --corPrimaria: rgb(110, 5, 5) ;
-    --corSecundaria: rgb(37, 2, 2);
-    --branco: rgb(80, 9, 12);
+    --corPrimaria: rgb(125, 89, 194) ;
+    --corSecundaria: rgb(112, 48, 172);
+    --branco: rgb(132, 88, 173);
 }
 
 header,footer{
@@ -49,7 +49,7 @@ nav{
     width: 200px;
     padding: 5px;
     background-color: var(--corPrimaria);
-    color: rgb(68, 10, 10);
+    color: rgb(64, 26, 100);
     display: flex;
     flex-direction: column;
     align-items: center;

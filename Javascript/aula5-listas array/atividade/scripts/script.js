@@ -1,38 +1,22 @@
-nction testes(){
-    // enquanto a condicao faca
-    // para de tanto ate tanto faca
-    contador = 0
-
-          //  while(contador < 3){
-       //  alert(' que maneiro ' FIZ ${contador+1} vezes ') 
-    //   contador++ 
- // }
-//    }
-for(var i = 0;1 < 3;i++){
-    alert(' que maneiro ` FIZ ${i+1} vezes')
-}
-}
-
-//testes()
-
-
 function carregarCatalogo(){
 
-    var livros = [
-          ["images/enrolados.jpg","A Menina que Roubava Livros"],
-          ["images/jardim secreto.jpg", "Jardim Secreto"],
-          ["images/juju.webp", "Jujustu Kaisen"],
-          ["images/demonslayer.jpg","Kimetsu no yaiba"],
-          ["images/a voz.jpg","A voz do silêncio"]
+    var Filme = [
+          ["/Javascript/aula5-listas array/atividade/images/enrolados.jpg","Enrolados"],
+          ["/Javascript/aula5-listas array/atividade/images/Moana2.jpg", "Moana 2"],
+          ["/Javascript/aula5-listas array/atividade/images/mulan.jpg", "Mulan"],
+          ["/Javascript/aula5-listas array/atividade/images/tiana.jpg","Tiana"],
+          ["/Javascript/aula5-listas array/atividade/images/tinker.jpg","Tinker"]
+          ["/Javascript/aula5-listas array/atividade/images/toystory.jpg","Toy Story"]
     ]
-   
-   livros.forEach(cadaLivro => {
-    
 
+   
+   Filme.forEach(cadaFilme => {
+    
+        console.log("oi")
        document.getElementById('catalogo').innerHTML += `
         <div class="livro">
-                <img src="${cadaLivro[0]}" alt="">
-           <h4>${cadaLivro[1]}</h4>
+                <img src="${cadaFilme[0]}" alt="">
+           <h4>${cadaFilme[1]}</h4>
       <button>
             Adicionar
                <img src="images/plus.svg" alt="">
@@ -42,4 +26,5 @@ function carregarCatalogo(){
        `
     }); 
 }
+
 carregarCatalogo()
