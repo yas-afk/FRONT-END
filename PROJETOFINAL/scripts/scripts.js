@@ -8,10 +8,10 @@ class Categoria {
     this.marca = marca
   }
 }
-lista_categorias.push(new Categoria('Sucos','images/Suco.png','MAIS DIVERSOS SUCOS DO MERCADO! Laranja, morango e muito mais.','Suco feito por @Marca'))
-lista_categorias.push(new Categoria('Refrigerantes','images/refrigerante2.png','Refrigerantes Saborosos!.','Refrigerante feito por @Marca'))
-lista_categorias.push(new Categoria('Cervejas','images/cerveja.png','Uma para animar a sua noite!','Cerveja feito por @Marca'))
-lista_categorias.push(new Categoria('Drinks Sem Álcool','images/drinks.png','','Drinks Sem Álcool feito por @Marca'))
+lista_categorias.push(new Categoria('Divertidamente','images/iPad divertidamente.png','20 de junho de 2024','@Disney'))
+lista_categorias.push(new Categoria('Moana 2','images/iPad moana.png','28 de novembro de 2024','@Disney'))
+lista_categorias.push(new Categoria('Mufasa','images/iPad mufasa.png','19 de dezembro de 2024','@Disney'))
+
 
 lista_categorias.forEach(categoria => {
     document.querySelector('#categoriaItems').innerHTML += `
@@ -29,5 +29,6 @@ lista_categorias.forEach(categoria => {
                       </div>
                     </div>
                   </div>
+
     `
 })
