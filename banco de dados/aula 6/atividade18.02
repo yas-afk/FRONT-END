@@ -1,0 +1,35 @@
+create database joinatividade;
+use joinatividade;
+
+create table clientes(
+	id_cliente INT PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(100)
+);
+
+create table pedidos(
+	id_pedido INT PRIMARY KEY AUTO_INCREMENT,
+	data_pedido DATE,
+	id_cliente INT NOT NULL,
+	FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente)
+);
+
+insert into clientes(nome) VALUES ("Carlos");
+insert into clientes(nome) VALUES ("Ana");
+insert into clientes(nome) VALUES ("Bruna");
+insert into clientes(nome) VALUES ("Jessica");
+insert into clientes(nome) VALUES ("Victor");
+insert into clientes(nome) VALUES ("Fernanda");
+
+insert into pedidos(data_pedido, id_cliente) VALUES ("2024-05-31",1);
+insert into pedidos(data_pedido, id_cliente) VALUES ("2019-11-30",1);
+insert into pedidos(data_pedido, id_cliente) VALUES ("2023-01-29",1);
+insert into pedidos(data_pedido, id_cliente) VALUES ("2025-02-18",2);
+insert into pedidos(data_pedido, id_cliente) VALUES ("2014-07-30",5);
+insert into pedidos(data_pedido, id_cliente) VALUES ("2022-09-20",6);
+insert into pedidos(data_pedido, id_cliente) VALUES ("2023-10-20",6);
+
+SELECT * from pedidos;
+
+SELECT pedidos.id_pedido, pedidos.data_pedido, clientes.nome FROM pedidos JOIN clientes ON pedidos.id_cliente = clientes.id_cliente;
+SELECT clientes.nome, pedidos.id_pedido, pedidos.data_pedido FROM clientes LEFT JOIN pedidos ON clientes.id_cliente = pedidos.id_cliente;
+SELECT clientes.nome, COUNT(pedidos.id_pedido) AS total_pedidos FROM clientes LEF JOIN pedidos ON clientes.id_clientes = pedidos.id_cliente GROUP BY clientes.id_cliente;
