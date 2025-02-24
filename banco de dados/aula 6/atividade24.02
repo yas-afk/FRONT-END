@@ -1,0 +1,17 @@
+ -- QUESTÃO 1) Muitos clientes cadastraram seus nomes com letras maiúsculas ou minúsculas de forma inconsistente. Como padronizar todos os nomes para ficarem em letras maiúsculas?
+SELECT first_name , UCASE(first_name) FROM employees;
+
+-- QUESTÃO 2) Os e-mails dos clientes foram digitados com letras maiúsculas e minúsculas misturadas. Como garantir que todos os e-mails fiquem em minúsculas?
+SELECT first_name , LCASE(first_name) FROM employees;
+
+-- QUESTÃO 3) A TechStore quer encontrar rapidamente os produtos que contêm a palavra "Notebook" na descrição. Como fazer isso?
+SELECT * FROM produtos WHERE first_name LIKE '%Notebook%';
+
+-- QUESTÃO 4) A empresa quer saber quantos clientes possuem e-mails do domínio "@gmail.com". Como contar esses clientes?
+SELECT COUNT(*) FROM clientes WHERE email_cliente LIKE '%@gmail.com';
+
+-- QUESTÃO 5) Alguns endereços foram cadastrados com abreviações inconsistentes, como "Av." em vez de "Avenida". Como substituir todas as ocorrências de "Av." por "Avenida" nos endereços?
+UPDATE clientes SET endereco_cliente = REPLACE(endereco_cliente, "Av.", "Avenida");
+
+ -- QUESTÃO 6) Alguns produtos foram cadastrados sem código. Como encontrar esses registros?
+ SELECT * FROM produtos WHERE codigo_produto IS NULL OR codigo_produto = '';
